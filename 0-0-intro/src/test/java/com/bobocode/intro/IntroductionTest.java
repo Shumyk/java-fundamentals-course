@@ -23,8 +23,8 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class IntroductionTest {
-    private Introduction introduction = new Introduction();
-    private String EXPECTED_MESSAGE = "The key to efficient learning is practice!";
+    private final Introduction introduction = new Introduction();
+    private final String EXPECTED_MESSAGE = "The key to efficient learning is practice!";
 
     @Test
     @Order(1)
