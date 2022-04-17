@@ -1,5 +1,8 @@
 package com.bobobode.cs;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 /**
  * Class {@link Node} is a very simple data structure that consists of an element itself and the reference to the next
  * node. An element can have any value since it's a generic. A reference to the next node allows to link {@link Node}
@@ -8,6 +11,9 @@ package com.bobobode.cs;
  * @param <T> a generic type T
  * @author Taras Boychuk
  */
+@NoArgsConstructor
+@AllArgsConstructor
 public class Node<T> {
-    // todo:
+    protected T element;
+    protected Node<T> next;
 }
