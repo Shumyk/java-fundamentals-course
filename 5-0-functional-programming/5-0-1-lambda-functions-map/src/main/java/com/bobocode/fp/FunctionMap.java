@@ -13,7 +13,7 @@ import java.util.function.Function;
  * @author Taras Boychuk
  */
 public class FunctionMap<T, R> {
-    private Map<String, Function<T, R>> functionMap;
+    private final Map<String, Function<T, R>> functionMap;
 
     FunctionMap() {
         functionMap = new HashMap<>();
