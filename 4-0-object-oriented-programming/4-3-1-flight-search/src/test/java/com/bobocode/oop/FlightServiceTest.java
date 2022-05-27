@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FlightServiceTest {
 
-    private FlightService flightService = new FlightServiceFactory().creteFlightService();
+    private final FlightService flightService = new FlightServiceFactory().creteFlightService();
 
     @Test
     public void testRegisterFlight() {
